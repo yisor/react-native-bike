@@ -20,7 +20,7 @@ const {width, height} = Dimensions.get('window');
 
 import Img from './../config/localImage';
 import NavBar from './../components/NavBar'
-import { BlurView, VibrancyView } from 'react-native-blur';
+// import { BlurView, VibrancyView } from 'react-native-blur';
 
 export default class PersonInfo extends Component {
 
@@ -52,8 +52,7 @@ export default class PersonInfo extends Component {
                 <View style={{justifyContent: 'center', alignItems: 'center', height: 150, width: width}}>
                     <Image style={{height: 150, width: width, resizeMode: 'cover'}}
                            source={Img.avatar}>
-                        <VibrancyView blurType="dark" style={{flex:1, alignItems: 'center'}}>
-                        </VibrancyView>
+                      
                     </Image>
                     <View style={{position: 'absolute', top: 0,right: 0, left:0, justifyContent: 'center', alignItems: 'center',}}>
                     <View style={{marginTop: 15, borderRadius: 76, height: 76, width: 76, backgroundColor: 'white', alignItems: 'center', justifyContent: 'center'}}>
